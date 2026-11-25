@@ -1,4 +1,4 @@
-const CACHE = 'ats-app-v2';
+const CACHE = 'ats-app-v3';
 const PRECACHE = [
   './',
   './index.html',

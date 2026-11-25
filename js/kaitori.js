@@ -165,7 +165,7 @@
     fd.set('_captcha', 'false');
     fd.set('_next', new URL('../thanks/', location.href).href);
 
-    fetch('https://formsubmit.co/ajax/info@ats-japan.com', {
+    fetch('https://formsubmit.co/ajax/cff27695889a01ffac9117cbcf20dfd9', {
       method: 'POST',
       body: fd,
       headers: { 'Accept': 'application/json' }
@@ -183,7 +183,7 @@
         var native = document.createElement('form');
         native.method = 'POST';
         native.enctype = 'multipart/form-data';
-        native.action = 'https://formsubmit.co/info@ats-japan.com';
+        native.action = 'https://formsubmit.co/cff27695889a01ffac9117cbcf20dfd9';
         native.style.display = 'none';
         function hidden(name, value) {
           var i = document.createElement('input');

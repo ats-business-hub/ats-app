@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>買い取り依頼｜不要になったコンテナの査定｜ATSアプリ</title>
-<meta name="description" content="使わなくなった海上コンテナやJRコンテナなどをATSにお売りになりたい方向け。品目・サイズ・状態・所在地と写真を添えて無料で依頼できます。">
+<title>買い取り依頼｜コンテナ・プレハブ（全国）｜ATSアプリ</title>
+<meta name="description" content="使わなくなったコンテナやプレハブをATSにお売りになりたい方向け。品目・サイズ・状態・所在地と写真を添えて無料で依頼できます。引取は全国に対応しています。">
 <link rel="canonical" href="https://ats-business-hub.github.io/ats-app/kaitori/">
 <meta name="theme-color" content="#0b4f8a">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,8 +12,8 @@
 <meta name="application-name" content="ATSコンテナ">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ATS コンテナアプリ">
-<meta property="og:title" content="買い取り依頼｜不要になったコンテナの査定｜ATSアプリ">
-<meta property="og:description" content="使わなくなった海上コンテナやJRコンテナなどをATSにお売りになりたい方向け。品目・サイズ・状態・所在地と写真を添えて無料で依頼できます。">
+<meta property="og:title" content="買い取り依頼｜コンテナ・プレハブ（全国）｜ATSアプリ">
+<meta property="og:description" content="使わなくなったコンテナやプレハブをATSにお売りになりたい方向け。品目・サイズ・状態・所在地と写真を添えて無料で依頼できます。引取は全国に対応しています。">
 <meta property="og:url" content="https://ats-business-hub.github.io/ats-app/kaitori/">
 <meta property="og:image" content="https://ats-business-hub.github.io/ats-app/img/og.jpg">
 <meta property="og:locale" content="ja_JP">
@@ -40,11 +40,11 @@
 <div class="w" style="padding-top:16px">
   <p class="muted"><a href="../">ホーム</a> ／ 買い取り依頼</p>
   <h1>買い取り依頼フォーム</h1>
-  <p class="lead">使わなくなったコンテナなどを、<strong>ATSにお売りになりたいお客様</strong>向けのフォームです。写真を添えて送信ください。追ってお電話またはメールでご連絡します。</p>
+  <p class="lead">使わなくなった<strong>コンテナ</strong>や<strong>プレハブ</strong>を、ATSにお売りになりたいお客様向けのフォームです。引取は<strong>全国</strong>に対応しています。写真を添えて送信ください。追ってお電話またはメールでご連絡します。</p>
   <div class="box">
     <p class="note">写真は合計約10MBまで（この画面では約8MBに自動縮小します）。対応形式は JPEG / PNG / HEIC など、スマホの写真アプリから選べる画像です。Googleアカウントは不要です。</p>
   </div>
-  <form class="kaitori" id="kaitori-form" action="https://formsubmit.co/info@ats-japan.com" method="POST" enctype="multipart/form-data" novalidate>
+  <form class="kaitori" id="kaitori-form" action="https://formsubmit.co/cff27695889a01ffac9117cbcf20dfd9" method="POST" enctype="multipart/form-data" novalidate>
     <input type="hidden" name="_subject" value="【買い取り依頼】ATSアプリから">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
@@ -68,6 +68,7 @@
       <option>JRコンテナ</option>
       <option>リーファ（冷凍冷蔵）</option>
       <option>コンテナハウス・加工済みコンテナ</option>
+      <option>プレハブ</option>
       <option>その他</option>
     </select>
 
@@ -97,7 +98,7 @@
     <label for="condition-detail">状態の詳細</label>
     <textarea id="condition-detail" name="状態の詳細" placeholder="扉の具合、凹みの位置、室内の様子など"></textarea>
 
-    <label for="pref">所在地（引取に伺う場所）<span class="req">必須</span></label>
+    <label for="pref">所在地（引取に伺う場所・全国対応）<span class="req">必須</span></label>
     <select id="pref" name="都道府県" required>
       <option value="">都道府県</option>
       <option value="北海道">北海道</option>
@@ -148,6 +149,7 @@
 <option value="鹿児島県">鹿児島県</option>
 <option value="沖縄県">沖縄県</option>
     </select>
+    <span class="hint">引取は全国に対応しています。設置場所の都道府県と、市区町村・番地をご記入ください。</span>
     <label for="address">市区町村・番地・目印<span class="req">必須</span></label>
     <input id="address" name="市区町村・番地" type="text" required autocomplete="street-address" placeholder="例）弥富市東末広…">
 
@@ -164,7 +166,7 @@
     <label for="notes">備考</label>
     <textarea id="notes" name="備考" placeholder="搬出のしやすさ、希望の連絡時間など"></textarea>
 
-    <p class="note">送信先は <strong>info@ats-japan.com</strong> です。買い取りの連絡以外の目的では使いません。初回のみ、同アドレスに届く確認メールのリンクを開いていただく必要があります（準備ができていればそのまま届きます）。</p>
+    <p class="note">送信先は <strong>info@ats-japan.com</strong> です。買い取りの連絡以外の目的では使いません。引取は全国、対象はコンテナとプレハブです。</p>
     <p class="err" id="form-error" hidden></p>
     <button type="submit" class="btn p" id="submit-btn" style="width:100%;margin:16px 0 8px">写真付きで依頼を送る</button>
   </form>
