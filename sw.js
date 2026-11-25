@@ -1,4 +1,4 @@
-const CACHE = 'ats-app-v5';
+const CACHE = 'ats-app-v6';
 const PRECACHE = [
   './',
   './index.html',
@@ -6,7 +6,6 @@ const PRECACHE = [
   './css/app.css',
   './js/app.js',
   './js/zaiko.js',
-  './js/kaitori.js',
   './js/jirei.js',
   './manifest.webmanifest',
   './favicon.svg',
