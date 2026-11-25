@@ -12,7 +12,7 @@
   }
 
   function card(item) {
-    var loc = item.location ? '（' + escapeHtml(item.location) + '）' : '';
+    var loc = (item.location && (item.title || '').indexOf(item.location) === -1) ? '（' + escapeHtml(item.location) + '）' : '';
     return (
       '<a class="card" href="' + escapeHtml(item.url) + '" rel="noopener" target="_blank">' +
         '<img src="' + root + item.image + '" alt="' + escapeHtml(item.title) + '" width="768" height="576" loading="lazy">' +

@@ -13,9 +13,11 @@
   var installBtn = document.getElementById('install-btn');
   var standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
 
+  if (standalone && installBox) installBox.classList.add('hide');
+
   function showInstall(mode) {
     if (!installBox || standalone) return;
-    installBox.classList.add('show');
+    installBox.classList.remove('hide');
     installBox.dataset.mode = mode || '';
   }
 
@@ -44,13 +46,13 @@
   var dismiss = document.getElementById('install-dismiss');
   if (dismiss) {
     dismiss.addEventListener('click', function () {
-      if (installBox) installBox.classList.remove('show');
+      if (installBox) installBox.classList.add('hide');
       try { sessionStorage.setItem('ats-install-dismissed', '1'); } catch (e) {}
     });
   }
   try {
     if (sessionStorage.getItem('ats-install-dismissed') && installBox) {
-      installBox.classList.remove('show');
+      installBox.classList.add('hide');
     }
   } catch (e) {}
 })();

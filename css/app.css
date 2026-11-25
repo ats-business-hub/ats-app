@@ -92,8 +92,8 @@ form.kaitori .hint{display:block;font-weight:500;color:var(--m);font-size:13px;m
 .honeypot{position:absolute;left:-9999px;height:0;overflow:hidden}
 
 /* install banner */
-.install{display:none;margin:12px 0;padding:12px 14px;border-radius:12px;background:#e8f1fa;border:1px solid #b9d0e8}
-.install.show{display:block}
+.install{display:block;margin:12px 0;padding:12px 14px;border-radius:12px;background:#e8f1fa;border:1px solid #b9d0e8}
+.install.hide{display:none}
 .install p{margin:0 0 8px}
 
 /* footer */
