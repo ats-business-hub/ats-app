@@ -149,71 +149,41 @@
     submitBtn.disabled = true;
     submitBtn.textContent = '送信しています…';
 
-    var fd = new FormData();
+    // FormSubmit の ajax エンドポイントは写真を落とすため、multipart の通常POSTだけ使う
     var els = form.querySelectorAll('input, select, textarea');
+    var native = document.createElement('form');
+    native.method = 'POST';
+    native.enctype = 'multipart/form-data';
+    native.action = 'https://formsubmit.co/cff27695889a01ffac9117cbcf20dfd9';
+    native.style.display = 'none';
+    function hidden(name, value) {
+      var i = document.createElement('input');
+      i.type = 'hidden';
+      i.name = name;
+      i.value = value;
+      native.appendChild(i);
+    }
     Array.prototype.forEach.call(els, function (el) {
       if (!el.name || el.type === 'file' || el.disabled) return;
       if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
-      fd.append(el.name, el.value);
+      hidden(el.name, el.value);
     });
+    hidden('写真枚数', String(files.length));
+    hidden('_subject', '【買い取り依頼】ATSアプリから');
+    hidden('_template', 'table');
+    hidden('_captcha', 'false');
+    hidden('_next', new URL('../thanks/', location.href).href);
     files.forEach(function (f, i) {
-      fd.append('photo_' + (i + 1), f, f.name);
+      var dt = new DataTransfer();
+      dt.items.add(f);
+      var fi = document.createElement('input');
+      fi.type = 'file';
+      fi.name = 'photo_' + (i + 1);
+      fi.files = dt.files;
+      native.appendChild(fi);
     });
-    fd.set('写真枚数', String(files.length));
-    fd.set('_subject', '【買い取り依頼】ATSアプリから');
-    fd.set('_template', 'table');
-    fd.set('_captcha', 'false');
-    fd.set('_next', new URL('../thanks/', location.href).href);
-
-    fetch('https://formsubmit.co/ajax/cff27695889a01ffac9117cbcf20dfd9', {
-      method: 'POST',
-      body: fd,
-      headers: { 'Accept': 'application/json' }
-    })
-      .then(function (res) { return res.json().then(function (j) { return { ok: res.ok, j: j }; }); })
-      .then(function (r) {
-        if (r.ok && (!r.j || r.j.success !== false)) {
-          location.href = new URL('../thanks/', location.href).href;
-          return;
-        }
-        throw new Error((r.j && (r.j.message || r.j.error)) || 'send failed');
-      })
-      .catch(function () {
-        // fallback: native POST (attachments included)
-        var native = document.createElement('form');
-        native.method = 'POST';
-        native.enctype = 'multipart/form-data';
-        native.action = 'https://formsubmit.co/cff27695889a01ffac9117cbcf20dfd9';
-        native.style.display = 'none';
-        function hidden(name, value) {
-          var i = document.createElement('input');
-          i.type = 'hidden';
-          i.name = name;
-          i.value = value;
-          native.appendChild(i);
-        }
-        Array.prototype.forEach.call(els, function (el) {
-          if (!el.name || el.type === 'file' || el.disabled) return;
-          if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
-          hidden(el.name, el.value);
-        });
-        hidden('写真枚数', String(files.length));
-        hidden('_subject', '【買い取り依頼】ATSアプリから');
-        hidden('_template', 'table');
-        hidden('_captcha', 'false');
-        hidden('_next', new URL('../thanks/', location.href).href);
-        files.forEach(function (f, i) {
-          var dt = new DataTransfer();
-          dt.items.add(f);
-          var fi = document.createElement('input');
-          fi.type = 'file';
-          fi.name = 'photo_' + (i + 1);
-          fi.files = dt.files;
-          native.appendChild(fi);
-        });
-        document.body.appendChild(native);
-        native.submit();
-      });
+    document.body.appendChild(native);
+    native.submit();
   });
 
   renderThumbs();
