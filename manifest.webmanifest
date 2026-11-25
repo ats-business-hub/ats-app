@@ -1,0 +1,41 @@
+{
+  "id": "/ats-app/",
+  "name": "ATS コンテナ 在庫・買取・施工事例",
+  "short_name": "ATSコンテナ",
+  "description": "ATS, Japan合同会社のコンテナアプリ。買い取り入荷の在庫、不要コンテナの買い取り依頼、おしゃれな施工事例をまとめています。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b4f8a",
+  "theme_color": "#0b4f8a",
+  "lang": "ja",
+  "dir": "ltr",
+  "categories": ["business", "shopping"],
+  "icons": [
+    {
+      "src": "img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "img/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "updated": "2026-11-25",
+  "source": "https://www.ats-japan.com/",
+  "notice": "写真と文章は公式サイト ats-japan.com の公開施工事例です。詳細は各ページをご覧ください。",
+  "items": [
+    {
+      "id": "coffee-shop",
+      "title": "住宅連結型のコーヒーショップ（千葉県）",
+      "category": "店舗",
+      "location": "千葉県",
+      "image": "img/cases/coffee-shop.webp",
+      "url": "https://www.ats-japan.com/house-connected_coffee-shop-14ft/"
+    },
+    {
+      "id": "nail-salon-shizuoka",
+      "title": "超コンパクトなネイルサロン（静岡県）",
+      "category": "店舗",
+      "location": "静岡県",
+      "image": "img/cases/nail-salon-shizuoka.webp",
+      "url": "https://www.ats-japan.com/small-12ftcontainer-nail-salon/"
+    },
+    {
+      "id": "beauty-salon",
+      "title": "プライベート・ビューティサロン",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/beauty-salon.webp",
+      "url": "https://www.ats-japan.com/private-beauty-salon/"
+    },
+    {
+      "id": "nail-salon-gray",
+      "title": "自宅敷地内のネイルサロン",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/nail-salon-gray.webp",
+      "url": "https://www.ats-japan.com/gray-nail-salon/"
+    },
+    {
+      "id": "car-workshop",
+      "title": "店舗とガレージを併設した車両整備屋さん",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/car-workshop.webp",
+      "url": "https://www.ats-japan.com/20180721_container-shop/"
+    },
+    {
+      "id": "ekimae-shop",
+      "title": "人が集まるオシャレな駅前店舗",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/ekimae-shop.webp",
+      "url": "https://www.ats-japan.com/20180515_container-n6/"
+    },
+    {
+      "id": "crepe-shop",
+      "title": "シンプルな店舗型コンテナハウスのクレープ屋さん",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/crepe-shop.webp",
+      "url": "https://www.ats-japan.com/20190416_container-shop/"
+    },
+    {
+      "id": "pet-salon",
+      "title": "コンパクトなペットサロン",
+      "category": "店舗",
+      "location": "",
+      "image": "img/cases/pet-salon.webp",
+      "url": "https://www.ats-japan.com/20181024_container-petshop/"
+    },
+    {
+      "id": "iron-wood-office",
+      "title": "アイアン×ウッドのコンテナ型事務所",
+      "category": "事務所",
+      "location": "",
+      "image": "img/cases/iron-wood-office.webp",
+      "url": "https://www.ats-japan.com/20220413-container-office/"
+    },
+    {
+      "id": "l-office",
+      "title": "グレー×ホワイト×ウッド調のL字事務所",
+      "category": "事務所",
+      "location": "",
+      "image": "img/cases/l-office.webp",
+      "url": "https://www.ats-japan.com/20200826_container-office/"
+    },
+    {
+      "id": "steel-wood-office",
+      "title": "Steel × Wood コンパクトオフィス",
+      "category": "事務所",
+      "location": "",
+      "image": "img/cases/steel-wood-office.webp",
+      "url": "https://www.ats-japan.com/20200205_container-office/"
+    },
+    {
+      "id": "wooddeck-house",
+      "title": "ウッドデッキ併設の山沿いコンテナハウス（岐阜県）",
+      "category": "住居・離れ",
+      "location": "岐阜県",
+      "image": "img/cases/wooddeck-house.webp",
+      "url": "https://www.ats-japan.com/cointainer-house-wooddeck/"
+    },
+    {
+      "id": "private-house",
+      "title": "自宅庭のくつろぎスペース",
+      "category": "住居・離れ",
+      "location": "",
+      "image": "img/cases/private-house.webp",
+      "url": "https://www.ats-japan.com/gifu-private-containerhouse/"
+    },
+    {
+      "id": "compact-garage",
+      "title": "12ftコンテナのコンパクトガレージ（愛知県）",
+      "category": "ガレージ",
+      "location": "愛知県",
+      "image": "img/cases/compact-garage.webp",
+      "url": "https://www.ats-japan.com/aichi-compact-garage/"
+    },
+    {
+      "id": "music-studio",
+      "title": "音楽スタジオ（岐阜県郡上市）",
+      "category": "その他",
+      "location": "岐阜県郡上市",
+      "image": "img/cases/music-studio.webp",
+      "url": "https://www.ats-japan.com/music-studio-container_gifu/"
+    },
+    {
+      "id": "connected-house",
+      "title": "20ftコンテナ4連結のコンテナハウス",
+      "category": "住居・離れ",
+      "location": "",
+      "image": "img/cases/connected-house.webp",
+      "url": "https://www.ats-japan.com/4-connected-container-house/"
+    }
+  ]
+}
