@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>入荷のお知らせ｜ATS コンテナアプリ</title>
+<meta name="description" content="ATS, Japan合同会社のコンテナアプリ。新しく掲載されたコンテナの在庫をお知らせします。">
+<link rel="canonical" href="https://ats-business-hub.github.io/ats-app/tsuuchi/">
+<meta name="theme-color" content="#0b4f8a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ATSコンテナ">
+<meta name="application-name" content="ATSコンテナ">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ATS コンテナアプリ">
+<meta property="og:title" content="入荷のお知らせ｜ATS コンテナアプリ">
+<meta property="og:description" content="ATS, Japan合同会社のコンテナアプリ。新しく掲載されたコンテナの在庫をお知らせします。">
+<meta property="og:url" content="https://ats-business-hub.github.io/ats-app/tsuuchi/">
+<meta property="og:image" content="https://ats-business-hub.github.io/ats-app/img/og.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../img/icons/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://www.ats-japan.com">
+<link rel="stylesheet" href="../css/app.css?v=8">
+</head>
+<body>
+<header class="hd">
+  <div class="hd-in">
+    <a class="logo" href="../">
+      <img src="../img/icons/icon-192.png" alt="" width="36" height="36">
+      <span>ATS コンテナアプリ<small>ATS, Japan合同会社</small></span>
+    </a>
+    <a class="hd-tel" href="tel:0120355272">電話する</a>
+  </div>
+</header>
+<main>
+<div class="w" style="padding-top:14px"><p class="muted"><a href="../">ホーム</a> ／ 入荷のお知らせ</p>
+
+<h1>入荷のお知らせ</h1>
+<p class="lead" style="margin-top:0">新しいコンテナが掲載されたら、アプリを開いたときにお知らせします。</p>
+<ol class="steps">
+  <li><strong>アプリを開くだけ</strong>前回見たあとに増えた在庫には「NEW」の印がつき、ホームにも件数が出ます。</li>
+  <li><strong>気になる条件を選ぶ</strong>下で選んだ条件に合う在庫だけを数えます。何も選ばなければ、すべての在庫が対象です。</li>
+</ol>
+<div class="box">
+  <p style="margin:0 0 8px"><strong>新品・中古</strong></p>
+  <div class="chk" id="w-cond">
+    <label><input type="checkbox" value="新品">新品</label>
+    <label><input type="checkbox" value="中古">中古</label>
+  </div>
+  <p style="margin:14px 0 8px"><strong>サイズ</strong></p>
+  <div class="chk" id="w-size">
+    <label><input type="checkbox" value="10">10ft以下</label>
+    <label><input type="checkbox" value="12">12・14ft</label>
+    <label><input type="checkbox" value="20">20ft</label>
+    <label><input type="checkbox" value="40">40ft</label>
+  </div>
+  <p class="muted" id="w-status" style="margin:12px 0 0"></p>
+</div>
+<div class="box" id="push-box" hidden>
+  <p style="margin:0 0 8px"><strong>スマホに通知を出す（Androidのみ・試験中）</strong></p>
+  <p class="muted" style="margin:0 0 8px">ホーム画面に追加したアプリでは、1日に1回ほど在庫を確認して、新しい在庫があれば通知します。端末の設定によっては届かないこともあります。</p>
+  <button type="button" class="btn s" id="push-on" style="width:100%">通知をオンにする</button>
+</div>
+<div class="box" id="line-box" hidden>
+  <p style="margin:0 0 8px"><strong>LINEで入荷情報を受け取る</strong></p>
+  <a class="btn p" id="line-link" href="#" style="width:100%">LINEで友だち追加</a>
+</div>
+<p>入荷の予定や、探しているサイズがあるときは、お電話で聞いていただくのがいちばん確実です。</p>
+<div class="btns two">
+  <a class="btn p" href="tel:0120355272">0120-355-272 に電話</a>
+  <a class="btn o" href="../zaiko/">在庫を見る</a>
+</div>
+</div>
+</main>
+<footer>
+  <div class="w">
+    <p><strong>ATS, Japan合同会社</strong>（代表 織田篤）</p>
+    <ul class="fl">
+      <li><a href="https://www.ats-japan.com/">公式サイト</a></li>
+      <li><a href="https://www.ats-japan.com/contact/">お問い合わせ</a></li>
+      <li><a href="https://www.ats-japan.com/items/">販売中のコンテナ</a></li>
+      <li><a href="https://www.ats-japan.com/price/">料金表</a></li>
+      <li><a href="../kaitori/">買い取り査定</a></li>
+      <li><a href="../tsuuchi/">入荷のお知らせ</a></li>
+      <li><a href="../install/">アプリの追加方法</a></li>
+    </ul>
+    <address>
+      〒498-0063 愛知県弥富市東末広（ヤード）<br>
+      TEL <a href="tel:0120355272">0120-355-272</a>（フリーダイヤル）／ <a href="tel:0523559565">052-355-9565</a><br>
+      メール <a href="mailto:info@ats-japan.com">info@ats-japan.com</a><br>
+      営業 10:00〜18:00（土・日・祝 定休）
+    </address>
+    <p style="color:#9aa3ad;font-size:13px">在庫・施工事例は公式サイト ats-japan.com の掲載内容から自動で更新しています。価格は税別表示です。</p>
+  </div>
+</footer>
+<nav class="bar" aria-label="メインメニュー">
+<a href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M6 10.5V20h12v-9.5"/></svg>ホーム</a>
+<a href="../zaiko/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="1.5"/><path d="M3 11h18M8 7V5h8v2"/></svg>在庫</a>
+<a href="../mitsumori/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h2M12 18h2"/></svg>見積もり</a>
+<a href="../jirei/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1"/><rect x="14" y="4" width="7" height="7" rx="1"/><rect x="3" y="13" width="7" height="7" rx="1"/><rect x="14" y="13" width="7" height="7" rx="1"/></svg>施工事例</a>
+<a href="../soudan/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>相談</a>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../js/config.js" defer></script>
+<script src="../js/app.js" defer></script>
+<script src="../js/tsuuchi.js" defer></script>
+</body>
+</html>

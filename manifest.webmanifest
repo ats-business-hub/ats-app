@@ -1,8 +1,8 @@
 {
   "id": "/ats-app/",
-  "name": "ATS コンテナ 在庫・買取・施工事例",
+  "name": "ATS コンテナ 在庫・見積もり・買取",
   "short_name": "ATSコンテナ",
-  "description": "ATS, Japan合同会社のコンテナアプリ。買い取り入荷の在庫、不要コンテナの買い取り依頼、おしゃれな施工事例をまとめています。",
+  "description": "ATS, Japan合同会社のコンテナアプリ。コンテナの在庫と価格、かんたん見積もり、写真で買い取り査定、施工事例をスマホで見られます。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
