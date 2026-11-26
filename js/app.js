@@ -43,16 +43,4 @@
   var isIOS = /iPhone|iPad|iPod/i.test(ua);
   if (isIOS && !standalone) showInstall('ios');
 
-  var dismiss = document.getElementById('install-dismiss');
-  if (dismiss) {
-    dismiss.addEventListener('click', function () {
-      if (installBox) installBox.classList.add('hide');
-      try { sessionStorage.setItem('ats-install-dismissed', '1'); } catch (e) {}
-    });
-  }
-  try {
-    if (sessionStorage.getItem('ats-install-dismissed') && installBox) {
-      installBox.classList.add('hide');
-    }
-  } catch (e) {}
 })();
